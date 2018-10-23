@@ -1,0 +1,216 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url(images/header_background.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    min-height: 750px;
+
+    font-family: "Montserrat-Bold", "AdobeInvisFont", "MyriadPro-Regular";
+
+
+}
+
+.header--overlay {
+    width: 100%px;
+    height: 750px;
+    background-color: rgba(0, 10, 30, 0.5);
+
+}
+
+.header__logo {
+    margin-top: 26px;
+
+}
+
+.header-text-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header__name {
+    color: #ffffff;
+    font-size: 33px;
+
+    margin-top: 195px;
+    margin-bottom: 32px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    
+
+}
+
+.header__text {
+
+    width: 625px;
+    height: 40px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 25px;
+    color: #e8e8e8;
+    font-family: "Open Sans";
+    font-weight: 300;
+    text-align: center;
+
+    display: block;
+    
+    margin-bottom: 34px;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+.header__button {
+
+    border-radius: 30px;
+    background-color: transparent;
+    color: #ffffff;
+    display: block;
+    
+    
+    padding: 10px 25px 15px 25px;
+    font-size: 13px;
+    width: 126px;
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.header__button:hover {
+    color: #000000;
+    background-color: #ffffff;
+    border: none;
+}
+
+.header--menu {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+
+    color: #ffffff;
+    text-align: right;
+    position: relative;
+    top: 30px;
+
+    text-transform: uppercase;
+    float: right;
+}
+
+.header--burger {
+    float: right;
+    width: 300px;
+    background-color: transparent;
+    color: #fff;
+    position: relative;
+    top: 30px;
+    text-align: center;
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#check-menu {
+    display: none;
+}
+
+label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.burger-line {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 35px;
+    height: 2px;
+    background-color: #fff;
+    transition: .5s all;
+}
+
+.burger-line__second,
+.burger-line__third {
+    top: 18px;
+}
+
+.burger-line__fourth {
+    top: 28px;
+}
+
+.burger-list {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: .5s all;
+}
+
+.burder-item {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    background-color: transparent;
+}
+
+.burder-item:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#check-menu:checked ~ .burger-list {
+    max-height: 500px;
+    font-size: 12px;
+}
+
+#check-menu:checked ~ .burger-line__first {
+    display: none;
+}
+
+#check-menu:checked ~ .burger-line__second {
+    transform: rotate(45deg);
+}
+
+#check-menu:checked ~ .burger-line__third {
+    transform: rotate(-45deg);
+}
+
+#check-menu:checked ~ .burger-line__fourth {
+    display: none;
+}
