@@ -79,15 +79,12 @@ header {
 }
 
 .header__button {
-
+ border: solid 2px #ffffff;
     border-radius: 30px;
     background-color: transparent;
     color: #ffffff;
     display: block;
-    
-    
-    padding: 10px 25px 15px 25px;
-    font-size: 13px;
+    font-size: 12px;
     width: 126px;
     height: 40px;
     text-transform: uppercase;
@@ -214,3 +211,69 @@ label {
 #check-menu:checked ~ .burger-line__fourth {
     display: none;
 }
+
+.service {
+   min-height: 580px;
+    background-color: #f5f5f5;
+    text-align: center;
+    
+}
+
+.service--line {
+    position: relative;
+    width: 40px;
+    height: 2px;
+    background-color: #525961;
+    top: 16px;
+    left: 565px;
+    
+}
+
+.service--header {
+    color: #29323c;
+    font-weight: 700px;
+    font-size: 34px;
+    padding-top: 100px;
+    margin-bottom: 16px;
+}
+
+.service--list {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.service--item {
+    position: relative;
+    width: 25%;
+   
+}
+
+.service-item__text {
+    color: #73787f;
+    font-size: 14px;
+    
+}
+
+.service--name {
+    margin-bottom: 24px;
+}
+
+.service__ellipce {
+    margin-top: 70px;
+    margin-bottom: 39px;
+    position: relative;
+    
+}
+
+
+.ellipce__img {
+    position: absolute;
+    
+    top: 105px;
+    left: 115px;
+}
+.adjast {
+    left: 125px;
+}
+
