@@ -94,6 +94,7 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.3s;
 
 }
 
@@ -422,5 +423,6 @@ header {
     background-repeat: no-repeat;
     width: 100%;
     min-height: 901px;
+    background-size: cover;
 
 }
