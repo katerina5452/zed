@@ -1,5 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    width: 100%;
 }
 
 * {
@@ -19,7 +21,9 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.8;
-    min-height: 750px;
+    height: auto;
+    width: 100%;
+
 
     font-family: "Montserrat-Bold", "AdobeInvisFont", "MyriadPro-Regular";
 
@@ -66,7 +70,7 @@ header {
     letter-spacing: 0px;
     line-height: 25px;
     color: #e8e8e8;
-    font-family: "Open Sans";
+
     font-weight: 300;
     text-align: center;
 
@@ -129,7 +133,8 @@ header {
     display: none;
 }
 
-label {
+
+.header--burger label {
     display: block;
     position: absolute;
     top: 0;
@@ -143,6 +148,7 @@ label {
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
 }
+
 
 .burger-line {
     position: absolute;
@@ -248,7 +254,7 @@ label {
     width: 25%;
     display: flex;
     flex-direction: column;
-    
+
 
 }
 
@@ -293,5 +299,128 @@ label {
 
 .service__text {
     margin-top: 108px;
+
+}
+
+.gallery {
+    min-height: 415px;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+
+
+.gallery-pics {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.gallery-image:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+
+.slider {
+    background-color: #ffffff;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    list-style: none;
+    position: relative;
     
+
+}
+
+.slider--text {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 14px;
+    max-width: 1157px;
+}
+
+
+
+.slider-avatar {
+    border-radius: 50%;
+    margin-top: 68px;
+    margin-bottom: 13px;
+}
+
+.slider--author {
+    color: #29323c;
+    font-weight: 700px;
+    font-size: 18px;
+    margin-bottom: 5px;
+
+}
+
+.slider-text {
+    color: #767c82;
+    font-size: 12px;
+    margin-bottom: 50px;
+}
+
+.slider-controls label {
+
+    width: 17px;
+    height: 17px;
+    margin-right: 8px;
+    display: inline-block;
+   
+    border: 2px solid #2b3746;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    z-index: 2;
+    margin-left:  48%;
+   
+    font-size: 0;
+}
+
+.visually-hidden {
+
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    clip: rect(0, 0, 0, 0);
+
+}
+
+.slide {
+    display: none;
+}
+
+#slide-1:checked ~ .slider #slide-1,
+#slide-2:checked ~ .slider #slide-2,
+#slide-3:checked ~ .slider #slide-3 {
+    display: block;
+      
+    
+}
+
+#slide-1:checked ~ .slider-controls label:nth-of-type(1),
+#slide-2:checked ~ slider-controls label:nth-of-type(2),
+#slide-3:checked ~ slider-controls label:nth-of-type(3), {
+    background-color: red;
+     transition: width 2s, height 2s, transform 2s;
+}
+
+.team {
+    background-image: url(images/teamBg.jpeg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 901px;
+
 }
