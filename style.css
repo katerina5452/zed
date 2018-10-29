@@ -94,7 +94,7 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s;
+
 
 }
 
@@ -102,6 +102,7 @@ header {
     color: #000000;
     background-color: #ffffff;
     border: none;
+    transition: all 0.5s;
 }
 
 .header--menu {
@@ -331,7 +332,7 @@ header {
     text-align: center;
     list-style: none;
     position: relative;
-    
+
 
 }
 
@@ -370,7 +371,7 @@ header {
     height: 17px;
     margin-right: 8px;
     display: inline-block;
-   
+
     border: 2px solid #2b3746;
     border-radius: 50%;
     cursor: pointer;
@@ -382,8 +383,8 @@ header {
     bottom: 60px;
     left: 0;
     z-index: 2;
-    margin-left:  48%;
-   
+    margin-left: 48%;
+
     font-size: 0;
 }
 
@@ -406,15 +407,16 @@ header {
 #slide-2:checked ~ .slider #slide-2,
 #slide-3:checked ~ .slider #slide-3 {
     display: block;
-      
-    
+
+
 }
 
 #slide-1:checked ~ .slider-controls label:nth-of-type(1),
 #slide-2:checked ~ slider-controls label:nth-of-type(2),
-#slide-3:checked ~ slider-controls label:nth-of-type(3), {
+#slide-3:checked ~ slider-controls label:nth-of-type(3),
+    {
     background-color: red;
-     transition: width 2s, height 2s, transform 2s;
+    transition: width 2s, height 2s, transform 2s;
 }
 
 .team {
@@ -425,4 +427,117 @@ header {
     min-height: 901px;
     background-size: cover;
 
+
+}
+
+.team--button {
+    border: solid 2px #ffffff;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #ffffff;
+    display: block;
+    font-size: 12px;
+    width: 200px;
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 93px auto;
+}
+
+.team--button:hover {
+    color: #000000;
+    background-color: #ffffff;
+    border: none;
+    transition: all 0.5s;
+}
+
+.team--overlay {
+
+    width: 100%px;
+    height: 901px;
+    background-color: rgba(0, 10, 30, 0.5);
+
+
+}
+
+.team--header {
+    color: #ffffff;
+    font-weight: 700px;
+    font-size: 34px;
+    padding-top: 100px;
+    margin-bottom: 16px;
+}
+
+.team--text {
+    color: #ffffff;
+}
+
+.team--line {
+    position: relative;
+    width: 40px;
+    height: 2px;
+    background-color: #ffffff;
+    top: 16px;
+    left: 565px;
+}
+
+.team--description {
+
+    text-align: center;
+}
+
+.team--cards {
+    width: 20%;
+    height: 415px;
+    background-color: #c4c9cc;
+    display: flex;
+    flex-direction: column-reverse;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-bottom: 30px;
+}
+
+.team--cards__first {
+    background-image: url(images/team4.jpeg);
+}
+
+.team-people {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-right: 28px;
+
+}
+
+.team--cards__second {
+    background-image: url(images/team3.jpeg);
+}
+
+.team--cards__third {
+    background-image: url(images/team2.jpeg);
+}
+
+.team--cards__fourth {
+    background-image: url(images/team1.jpeg);
+}
+
+.team--wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-collegs {
+    justify-content: flex-end;
+    
+    text-align: center;
+}
+
+.team-position {
+    margin-bottom: 79px;
+}
+
+.team-name {
+    margin-bottom: 7px;
 }
